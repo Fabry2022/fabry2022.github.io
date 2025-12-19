@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.skills ul,
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li,
+.projects li {
+    background: #1e293b;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    background: #020617;
+    font-size: 0.9rem;
+}
