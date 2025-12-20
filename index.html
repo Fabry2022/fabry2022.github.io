@@ -3,55 +3,176 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fabricio Castro | IT Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricio Castro | Portfolio</title>
+
+    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header class="hero">
-        <h1>Fabricio Castro</h1>
-        <p>IT Support | Estudiante de Ingeniería en Computación</p>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Fabricio.dev</div>
+                <div class="nav-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy IT Support y estudiante de Ingeniería en Computación en la Universidad Don Bosco.
-            Me apasiona la tecnología, la programación y el desarrollo de software.
-            Me considero un aprendiz autodidacta en constante crecimiento.
-        </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hola, soy <span class="highlight">Fabricio</span></h1>
+                <p>Estudiante de Ingeniería en Computación & IT Support. Apasionado por crear soluciones tecnológicas y
+                    aprender nuevas herramientas.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Using the existing asset path as verified -->
+                <img src="assets/profile.jpg" alt="Fabricio Castro">
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>Tecnologías</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C / C++</li>
-            <li>Git & GitHub</li>
-        </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-card">
+                <p>
+                    Soy IT Support y estudiante de Ingeniería en Computación en la Universidad Don Bosco.
+                    Me considero un aprendiz autodidacta en constante crecimiento, apasionado por la tecnología,
+                    la programación y el desarrollo de software. Siempre busco nuevos retos para expandir mis
+                    conocimientos.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="projects">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>📌 PagoTuFactura</li>
-            <li>📌 Banco Pokémon</li>
-            <li>📌 Proyecto1DAS</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <!-- Using generic code icon for C/C++ or simple text if preferred -->
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C / C++</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h2>Contacto</h2>
-        <a href="https://www.linkedin.com/in/fabricio-castro-54a3b9272/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Fabry2022" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/fabriciocastro309" target="_blank">Instagram</a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>PagoTuFactura</h3>
+                        <p>Sistema de gestión de pagos y facturación simplificado.</p>
+                    </div>
+                    <a href="#" class="project-link">Ver Código <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-dragon"></i>
+                        </div>
+                        <h3>Banco Pokémon</h3>
+                        <p>Simulador bancario temático con gestión de usuarios y transacciones.</p>
+                    </div>
+                    <a href="#" class="project-link">Ver Código <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Proyecto1DAS</h3>
+                        <p>Aplicación de soporte administrativo y gestión de datos.</p>
+                    </div>
+                    <a href="#" class="project-link">Ver Código <i class="fa-brands fa-github"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <a href="https://www.linkedin.com/in/fabricio-castro-54a3b9272/" target="_blank" class="social-btn"
+                    title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Fabry2022" target="_blank" class="social-btn" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/fabriciocastro309" target="_blank" class="social-btn"
+                    title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="mailto:tuemail@ejemplo.com" class="social-btn" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 Fabricio Castro</p>
+        <div class="container">
+            <p>&copy; 2025 Fabricio Castro. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
